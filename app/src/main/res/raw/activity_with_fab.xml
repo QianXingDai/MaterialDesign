@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.bottomappbar.WithFabActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onClick"
+            android:text="END"
+            android:layout_weight="1" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onClick"
+            android:text="CENTER"
+            android:layout_weight="1" />
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btn_hide_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onClick"
+            android:textOff="SHOW FAB"
+            android:textOn="HIDE FAB"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        app:layout_anchor="@id/bottom_appbar"
+        app:layout_anchorGravity="top|center_horizontal"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

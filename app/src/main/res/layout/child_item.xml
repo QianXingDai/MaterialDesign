@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:paddingStart="85dp"
+    android:foreground="?selectableItemBackground"
+    android:textSize="18sp"
+    android:textColor="@android:color/black"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="start"
+    tools:ignore="RtlSymmetry"></TextView>
