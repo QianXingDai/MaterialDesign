@@ -27,7 +27,7 @@
 
     <string-array name="group_item_child_titles">
         <item>Basic,With Fab</item>
-        <item>Basic,Shift,Icon</item>
+        <item>Basic</item>
         <item>Persistent,Modal,Full</item>
         <item>Basic,Fab buttons,Button Toggle Group</item>
         <item>Basic,Overlap</item>

@@ -16,7 +16,7 @@ import com.kakacat.materialdesign.R;
 import com.kakacat.materialdesign.activity.ShowCodeActivity;
 
 public class BasicActivity extends AppCompatActivity {
-    private static final String[] fileNames = {"basic_activity.java"};
+    private static final String[] fileNames = {"bottom_appbar_basic_activity.java"};
 
     private Context context;
 
