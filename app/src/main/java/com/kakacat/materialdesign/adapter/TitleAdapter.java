@@ -1,5 +1,6 @@
 package com.kakacat.materialdesign.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.ViewHolder> 
             inflater = LayoutInflater.from(parent.getContext());
         }
         View view = inflater.inflate(R.layout.layout_item,parent,false);
+        Log.d("hhh", "onCreateViewHolder");
         return new ViewHolder(view);
     }
 
@@ -46,6 +48,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
+        Log.d("hhh", "itemCount = " + stringList.size());
         return stringList.size();
     }
 

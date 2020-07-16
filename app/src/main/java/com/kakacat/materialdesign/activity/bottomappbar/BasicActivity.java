@@ -17,7 +17,7 @@ import com.kakacat.materialdesign.util.Util;
 public class BasicActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String[] fileNames = {"activity", "xml", "menu", "toolbar"};
-    private static final int[] fileIds = {R.raw.basic_activity, R.raw.activity_bottom_appbar_basic, R.raw.bottom_nav, R.raw.layout_toolbar};
+    private static final int[] fileIds = {R.raw.bottom_appbar_basic_activity, R.raw.activity_bottom_appbar_basic, R.raw.bottom_nav, R.raw.layout_toolbar};
     private Context context;
 
     @Override

@@ -6,8 +6,6 @@ import android.content.Intent;
 import com.kakacat.materialdesign.activity.ShowCodeActivity;
 import com.kakacat.materialdesign.activity.bottomappbar.BasicActivity;
 import com.kakacat.materialdesign.activity.bottomappbar.WithFabActivity;
-import com.kakacat.materialdesign.activity.bottomnavigation.IconActivity;
-import com.kakacat.materialdesign.activity.bottomnavigation.ShiftActivity;
 
 public class Util {
 
@@ -27,10 +25,6 @@ public class Util {
             case 1:{
                 if(childPosition == 0){
                     intent.setClass(packageContext, com.kakacat.materialdesign.activity.bottomnavigation.BasicActivity.class);
-                }else if(childPosition == 1){
-                    intent.setClass(packageContext, ShiftActivity.class);
-                }else if(childPosition == 2){
-                    intent.setClass(packageContext, IconActivity.class);
                 }
                 break;
             }

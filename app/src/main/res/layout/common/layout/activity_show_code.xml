@@ -30,7 +30,6 @@
                     android:id="@+id/chip_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     style="@style/Widget.MaterialComponents.Chip.Filter"
                     app:singleLine="true"
                     app:singleSelection="true"

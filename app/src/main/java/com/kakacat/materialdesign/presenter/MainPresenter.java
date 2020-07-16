@@ -56,7 +56,6 @@ public class MainPresenter implements MainContract.MainPresenter {
         }
     }
 
-
     @Override
     public IView getView() {
         return mView;
